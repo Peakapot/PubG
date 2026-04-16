@@ -1,0 +1,141 @@
+:root {
+  --bg: #0f1115;
+  --surface: #1a1d24;
+  --surface-2: #232733;
+  --accent: #f1c40f;
+  --text: #f5f5f5;
+  --muted: #b5bdc9;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #1b1f27, var(--bg) 45%);
+  min-height: 100vh;
+}
+
+a { color: var(--accent); }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.25rem;
+  background: rgba(10, 11, 14, 0.95);
+  border-bottom: 1px solid #2f3440;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.06rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: var(--accent);
+  color: #111;
+}
+
+.hero {
+  padding: 3rem 1.25rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero h1 { margin-top: 0; font-size: clamp(1.8rem, 4vw, 2.7rem); }
+.hero p { color: var(--muted); max-width: 65ch; }
+
+.grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid #2b3040;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.card h2, .card h3 { margin-top: 0; }
+
+.button {
+  display: inline-block;
+  margin-top: 0.6rem;
+  background: var(--accent);
+  color: #111;
+  font-weight: 700;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #3a4151;
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+ul.clean {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul.clean li {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #2c3140;
+}
+
+ul.clean li:last-child { border-bottom: none; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  border-bottom: 1px solid #303644;
+  padding: 0.6rem;
+  text-align: left;
+}
+.table th { color: var(--accent); }
+
+.footer {
+  padding: 1rem 1.25rem 2rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 0.6rem;
+}
