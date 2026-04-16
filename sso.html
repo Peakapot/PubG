@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xbox Single Sign-On | PUBG Kills Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">PUBG Kills Hub</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sso.html">Xbox SSO</a>
+      <a href="leaderboards.html">Leaderboards</a>
+      <a href="events.html">Events</a>
+      <a href="news.html">News RSS</a>
+      <a href="releases.html">Releases</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Sign in with Xbox Account (SSO)</h1>
+    <p>
+      Click below to start Microsoft OAuth. Replace the placeholder client ID in <code>app.js</code>
+      with your registered app credentials to enable production login.
+    </p>
+  </section>
+
+  <section class="grid">
+    <article class="card">
+      <h2>Xbox Login</h2>
+      <button class="button" id="xbox-login">Continue with Xbox</button>
+      <p id="token-status">No token detected yet.</p>
+    </article>
+
+    <article class="card">
+      <h2>Implementation Notes</h2>
+      <ul class="clean">
+        <li>Register app in Microsoft Entra / Azure portal.</li>
+        <li>Set redirect URI to this site domain.</li>
+        <li>Exchange token on backend before calling Xbox services.</li>
+      </ul>
+    </article>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

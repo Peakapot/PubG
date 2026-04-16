@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PUBG Stream Kills Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">PUBG Kills Hub</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="sso.html">Xbox SSO</a>
+      <a href="leaderboards.html">Leaderboards</a>
+      <a href="events.html">Events</a>
+      <a href="news.html">News RSS</a>
+      <a href="releases.html">Releases</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Watch PUBG Streamer Kills in One Place</h1>
+    <p>
+      Built for fans who want fast access to streamer kill clips from <strong>pubg.report</strong>,
+      esports standings, event schedules, patch updates, and official announcements.
+    </p>
+  </section>
+
+  <section class="grid">
+    <article class="card">
+      <h2>Find Kills by Player</h2>
+      <p>Direct feed shortcut to pubg.report streamer interactions.</p>
+      <form id="report-form">
+        <label for="pubg-user">PUBG player name</label>
+        <input id="pubg-user" placeholder="Enter player/tag" />
+        <button class="button" type="submit">Open Stream Kill Feed</button>
+      </form>
+      <p id="report-output"></p>
+    </article>
+
+    <article class="card">
+      <h2>PUBG Worlds + Competitive Links</h2>
+      <ul class="clean">
+        <li><a target="_blank" rel="noreferrer" href="https://pubgesports.com/">PUBG Esports Home</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://pubgesports.com/en/tournament">World Championships & Tournaments</a></li>
+        <li><a target="_blank" rel="noreferrer" href="https://pubg.report/">pubg.report Direct Site</a></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Theme</h2>
+      <p>Dark tactical styling inspired by PUBG menus and event branding.</p>
+      <img class="banner-img" src="https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=1200&q=60" alt="Gaming setup" />
+    </article>
+  </section>
+
+  <div class="footer">Unofficial fan experience. PUBG assets and trademarks belong to KRAFTON.</div>
+  <script src="app.js"></script>
+</body>
+</html>
